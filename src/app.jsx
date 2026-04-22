@@ -55,4 +55,20 @@ const firebaseConfig = {
                                                                                                                                                                                                                                                                                     </div>
                                                                                                                                                                                                                                                                                       );
                                                                                                                                                                                                                                                                                       }
-                                                                                                                                                                                                                                                                                      
+       <div style={{ padding: '20px', background: '#111', borderRadius: '10px', margin: '10px' }}>
+          <input 
+              type="text" 
+                  placeholder="Pega link de Amazon aquí..." 
+                      value={inputUrl}
+                          onChange={(e) => setInputUrl(e.target.value)}
+                              style={{ width: '100%', padding: '10px', marginBottom: '10px', borderRadius: '5px' }}
+                                />
+                                  <button 
+                                      onClick={handleSubirConIA}
+                                          disabled={loadingIA}
+                                              style={{ background: '#ff0050', color: 'white', border: 'none', padding: '12px', width: '100%', borderRadius: '5px', fontWeight: 'bold' }}
+                                                >
+                                                    {loadingIA ? "🪄 La IA está pensando..." : "✨ PUBLICAR CON IA"}
+                                                      </button>
+                                                      </div>
+                                                                                                                                                                                                                                                                                                                                    
