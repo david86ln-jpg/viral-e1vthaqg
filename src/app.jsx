@@ -28,7 +28,7 @@ function App() {
                                                         setLoadingIA(true);
 
                                                             try {
-                                                                  const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+                                                                  const genAI = new GoogleGenerativeAI("AIzaSyAXlb2uiqRSzbD9P8GH8XDePExLUfydnAQ");
                                                                         
                                                                               // El "instrucción" para la IA
                                                                                     const prompt = `Analiza este enlace y genera un título corto (máx 10 palabras), muy viral y magnético para una web de chollos. Usa emojis. Devuelve SOLO el texto: ${inputUrl}`;
